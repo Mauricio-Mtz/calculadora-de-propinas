@@ -7,6 +7,9 @@ export default defineConfig({
   plugins: [react(), tailwindcss(),],
   server: {
     port: 10000,
-    host: '0.0.0.0'
+    host: '0.0.0.0',
+    preview: {
+      allowedHosts: ['calculadora-de-propinas.onrender.com']
+    }
   }
 })
